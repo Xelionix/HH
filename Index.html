@@ -83,6 +83,17 @@
                                 <cylinder height="2" radius="1"></cylinder>
                             </shape>
                         </transform>
+                        <!-- Voxel terrain -->
+                        <transform translation="0 -10 0"> <!-- Adjust position as needed -->
+                            <shape>
+                                <appearance>
+                                    <material diffuseColor="green"></material> <!-- Green color for the terrain -->
+                                </appearance>
+                                <box size="1 1 1"></box> <!-- Initial voxel -->
+                                <!-- Repeat the voxel to create the terrain -->
+                                <repeat id="voxelGrid" solid="true" direction="0 0 1" offset="0 1 0"></repeat>
+                            </shape>
+                        </transform>
                     </scene>
                 </x3d>
             </div>
