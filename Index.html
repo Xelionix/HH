@@ -47,7 +47,6 @@
         }
 
         #game-window {
-            background-color: #add8e6; /* Light blue background color for game window */
             width: 800px; /* Adjust as needed */
             height: 600px; /* Adjust as needed */
         }
@@ -75,9 +74,14 @@
             <div id="game-window">
                 <x3d width="800px" height="600px">
                     <scene>
-                        <!-- Load GLTF model -->
-                        <transform scale="0.01 0.01 0.01">
-                            <inline url="assets/gltf/fred.glb"></inline>
+                        <!-- Blue cylinder -->
+                        <transform translation="0 0 0">
+                            <shape>
+                                <appearance>
+                                    <material diffuseColor="0 0 1"></material> <!-- Blue color for the cylinder -->
+                                </appearance>
+                                <cylinder height="2" radius="1"></cylinder>
+                            </shape>
                         </transform>
                     </scene>
                 </x3d>
