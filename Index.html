@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Habitats Demo</title>
+    <script src="x3dom/x3dom.js"></script> <!-- Path to X3DOM -->
+    <script src="cannon/cannon.js"></script> <!-- Path to Cannon.js -->
+    <style>
+        body {
+            background-image: url('assets/png/background.png'); /* Use background image */
+            background-size: cover;
+            background-repeat: repeat;
+            background-color: #333333; /* Dark grey background color */
+            margin: 0;
+            font-family: 'Caesar Dressing', cursive, sans-serif; /* Primitive caveman-like font */
+            color: #4d2d00; /* Dark Brown text color */
+        }
+
+        header {
+            background-color: #2d2d2d; /* Dark grey for the header */
+            padding: 10px;
+            text-align: left;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 805px;
+            height: 152px;
+            margin-right: 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        #game-applet-container {
+            background-color: #555555; /* Slightly lighter grey for the game container */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Simple shadow effect */
+            display: flex;
+            justify-content: center; /* Center the game window */
+        }
+
+        #game-window {
+            background-color: #add8e6; /* Light blue background color for game window */
+            width: 800px; /* Adjust as needed */
+            height: 600px; /* Adjust as needed */
+        }
+
+        footer {
+            background-color: #2d2d2d; /* Dark grey for the footer */
+            padding: 10px;
+            text-align: center;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src='assets/png/logo.png' alt='Logo' class='logo'> <!-- Use logo image -->
+    </header>
+
+    <main>
+        <div id="game-applet-container">
+            <!-- X3DOM content goes here -->
+            <div id="game-window">
+                <x3d width="800px" height="600px">
+                    <scene>
+                        <!-- Load GLTF model -->
+                        <transform scale="0.01 0.01 0.01">
+                            <inline url="assets/gltf/fred.glb"></inline>
+                        </transform>
+                    </scene>
+                </x3d>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>WTFPL-licenced by Xelionix GP</p> <!-- Replace copyright with WTFPL-licenced -->
+    </footer>
+</body>
+
+</html>
