@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harsh Habitats Demo</title>
-    <script src="x3dom/x3dom.js"></script> <!-- Path to X3DOM -->
-    <script src="cannon/cannon.js"></script> <!-- Path to Cannon.js -->
     <style>
         body {
             background-image: url('assets/png/background.png'); /* Use background image */
@@ -14,7 +12,7 @@
             background-repeat: repeat;
             background-color: #333333; /* Dark grey background color */
             margin: 0;
-            font-family: 'Caesar Dressing', cursive, sans-serif; /* Primitive caveman-like font */
+            font-family: url('assets/ttf/caeserdressing.ttf'), cursive, sans-serif; /* Use CaesarDressing font */
             color: #4d2d00; /* Dark Brown text color */
         }
 
@@ -37,18 +35,13 @@
             padding: 20px;
         }
 
-        #game-applet-container {
-            background-color: #555555; /* Slightly lighter grey for the game container */
-            padding: 20px;
+        #game-container {
+            width: 1200px; /* Adjust as needed */
+            height: 600px; /* Adjust as needed */
+            background-color: #add8e6; /* Light blue background color for game container */
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Simple shadow effect */
-            display: flex;
-            justify-content: center; /* Center the game window */
-        }
-
-        #game-window {
-            width: 800px; /* Adjust as needed */
-            height: 600px; /* Adjust as needed */
+            margin: 0 auto; /* Center the game container */
         }
 
         footer {
@@ -69,39 +62,17 @@
     </header>
 
     <main>
-        <div id="game-applet-container">
-            <!-- X3DOM content goes here -->
-            <div id="game-window">
-                <x3d width="800px" height="600px">
-                    <scene>
-                        <!-- Blue cylinder -->
-                        <transform translation="0 0 0">
-                            <shape>
-                                <appearance>
-                                    <material diffuseColor="0 0 1"></material> <!-- Blue color for the cylinder -->
-                                </appearance>
-                                <cylinder height="2" radius="1"></cylinder>
-                            </shape>
-                        </transform>
-                        <!-- Voxel terrain -->
-                        <transform translation="0 -10 0"> <!-- Adjust position as needed -->
-                            <shape>
-                                <appearance>
-                                    <material diffuseColor="green"></material> <!-- Green color for the terrain -->
-                                </appearance>
-                                <box size="1 1 1"></box> <!-- Initial voxel -->
-                                <!-- Repeat the voxel to create the terrain -->
-                                <repeat id="voxelGrid" solid="true" direction="0 0 1" offset="0 1 0"></repeat>
-                            </shape>
-                        </transform>
-                    </scene>
-                </x3d>
-            </div>
+        <div id="game-container">
+            <!-- My applet will be embedded here -->
+            <applet code="MainMenu.class" width="100%" height="100%">
+                <!-- I'll add any parameters my applet requires -->
+                <!-- Example: <param name="paramName" value="paramValue"> -->
+            </applet>
         </div>
     </main>
 
     <footer>
-        <p>WTFPL-licenced by Xelionix GP</p> <!-- Replace copyright with WTFPL-licenced -->
+        <p>WTFPL-licenced by Xelionix GP</p> <!-- I'll replace copyright with WTFPL-licenced -->
     </footer>
 </body>
 

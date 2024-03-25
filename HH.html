@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Habitats - Main Menu</title>
+    <style>
+        body {
+            background-image: url('assets/png/background.png'); /* Use background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            overflow: hidden; /* Prevent scrolling */
+            font-family: url('assets/ttf/caeserdressing.ttf'), cursive; /* Use CaesarDressing font */
+        }
+
+        #game-buttons {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        button {
+            display: block;
+            width: 240px; /* Longer button width */
+            height: 60px; /* Increased button height */
+            margin: 10px;
+            background-color: #7F5112; /* Brown color */
+            color: #FFFFFF; /* White text color */
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            font-family: url('assets/ttf/caesardressing.ttf'), cursive; /* Use CaesarDressing font */
+        }
+
+        button:hover {
+            background-color: #FFFFFF; /* White hover color */
+            color: #7F5112; /* Brown hover text color */
+        }
+
+        button:focus {
+            outline: none; /* Remove focus outline */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Logo image -->
+    <img src="assets/png/logo.png" alt="Logo" style="display: block; margin: 20px auto;">
+
+    <div id="game-buttons">
+        <button id="singleplayer">Singleplayer</button>
+        <button id="load_world">Load World</button>
+        <button id="random">Random</button>
+        <button id="credits">Credits</button>
+    </div>
+
+    <script>
+        // Add event listeners to buttons
+        document.getElementById("singleplayer").addEventListener("click", function() {
+            // Add logic to handle singleplayer button click
+        });
+
+        document.getElementById("load_world").addEventListener("click", function() {
+            // Add logic to handle load world button click
+        });
+
+        document.getElementById("random").addEventListener("click", function() {
+            // Add logic to handle random button click
+        });
+
+        document.getElementById("credits").addEventListener("click", function() {
+            // Add logic to handle credits button click
+        });
+    </script>
+</body>
+
+</html>
