@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Habitats | Xelionix GP</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2a2a2a;
+            color: #f4f4f4;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: #f4f4f4;
+            padding: 20px 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header h1 {
+            float: left;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        header nav ul li a {
+            color: #f4f4f4;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .hero {
+            background: url('path/to/hero-image.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .btn {
+            display: inline-block;
+            color: #fff;
+            background: #ff5733;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+        section {
+            padding: 40px 0;
+        }
+        section h2 {
+            text-align: center;
+            margin: 0 0 20px 0;
+            font-size: 2.5em;
+        }
+        .features, .updates {
+            background-color: #1a1a1a;
+            padding: 40px 0;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features ul li {
+            font-size: 1.2em;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .swf-spot {
+            text-align: center;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+        .swf-spot object {
+            width: 100%;
+            height: auto;
+        }
+        .update-item {
+            background-color: #333;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        footer {
+            background: #1a1a1a;
+            color: #f4f4f4;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .modal-content {
+            position: relative;
+            margin: auto;
+            padding: 0;
+            width: 80%;
+            max-width: 700px;
+        }
+        .modal-content object {
+            width: 100%;
+            height: auto;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            color: #fff;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Harsh Habitats</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#screenshots">Screenshots</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#play">Play a Flash Fan Game</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#updates">Updates</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to Harsh Habitats</h2>
+            <p>The ultimate civilization-building and survival game.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Harsh Habitats</h2>
+            <p>Harsh Habitats is a 3-D civilization-building and survival game developed by Xelionix GP. It features mild violence, no blood or gore, comic mischief, and very mild off-screen suggestive activity, making it suitable for an E10+ audience.</p>
+	<iframe width="552" height="167" frameborder="0" src="https://itch.io/embed/2908375"><a href="https://xelionix.itch.io/harsh-habitats">Harsh Habitats by XelionixGP</a></iframe>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <ul>
+                <li>Build and manage your own civilization</li>
+                <li>Survive in harsh environments</li>
+                <li>Engage in strategic gameplay</li>
+                <li>Explore diverse biomes</li>
+                <li>Experience rich, immersive graphics</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="screenshots">
+        <div class="container">
+            <h2>Screenshots</h2>
+            <div class="swf-spot" onclick="openModal('screenshot1')">
+                <object type="application/x-shockwave-flash" data="screenshot1.swf">
+                    <param name="movie" value="path/to/screenshot1.swf" />
+                    <param name="quality" value="high" />
+                </object>
+            </div>
+            <div class="swf-spot" onclick="openModal('screenshot2')">
+                <object type="application/x-shockwave-flash" data="screenshot2.swf">
+                    <param name="movie" value="screenshot2.swf" />
+                    <param name="quality" value="high" />
+                </object>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos">
+        <div class="container">
+            <h2>Videos</h2>
+            <div class="swf-spot" onclick="openModal('video1')">
+                <object type="application/x-shockwave-flash" data="video1.swf">
+                    <param name="movie" value="video1.swf" />
+                    <param name="quality" value="high" />
+                </object>
+            </div>
+            <div class="swf-spot" onclick="openModal('video2')">
+                <object type="application/x-shockwave-flash" data="video2.swf">
+                    <param name="movie" value="video2.swf" />
+                    <param name="quality" value="high" />
+                </object>
+            </div>
+        </div>
+    </section>
+
+    <section id="play">
+        <div class="container">
+            <h2>Play a Flash Fan Game</h2>
+            <div class="swf-spot" onclick="openModal('HarshHabitatsFlash2D')">
+                <object type="application/x-shockwave-flash" data="HarshHabitatsFlash2D.swf">
+                    <param name="movie" value="HarshHabitatsFlash2D.swf" />
+                    <param name="quality" value="high" />
+                </object>
+            </div>
+        </div>
+    </section>
+
+    <section id="updates" class="updates">
+        <div class="container">
+            <h2>Game Updates</h2>
+            <div id="update-list">
+                <div class="update-item">
+                    <h3>Demo Update 1.0</h3>
+                    <p>Initial release with basic features.</p>
+                    <p><small>2024-03-03</small></p>
+                </div>
+                <div class="update-item">
+                    <h3>Demo Update 1.1</h3>
+                    <p>Added new graphical elements</p>
+                    <p><small>2024-04-07</small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:xelionixgp@hotmail.com">xelionixgp@hotmail.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Xelionix GP. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <object id="modalObject" type="application/x-shockwave-flash" width="100%" height="100%">
+                <param name="quality" value="high" />
+            </object>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            var modal = document.getElementById('myModal');
+            var modalObject = document.getElementById('modalObject');
+            modalObject.setAttribute('data', 'path/to/' + id + '.swf');
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            var modal = document.getElementById('myModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
+
