@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HH Mini - Harsh Habitats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('stoneflip.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the body takes full height */
+        }
+
+        header {
+            background-color: #1c1c1c; /* Dark grey header */
+            padding: 20px;
+            display: flex;
+            align-items: center; /* Align items vertically in the header */
+        }
+
+        .logo {
+            max-width: 200px; /* Resized logo */
+            height: auto;
+            margin-right: 20px; /* Space between logo and nav */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 40px;
+            flex: 1; /* Allows sections to grow and fill space */
+            display: flex; /* Enable flexbox layout */
+            flex-direction: column; /* Stack items vertically */
+            justify-content: flex-start; /* Align items to the top */
+            align-items: flex-start; /* Align items to the left */
+            background-color: rgba(28, 28, 28, 0.8); /* Slightly transparent background */
+            border-radius: 5px; /* Rounded corners */
+            margin: 20px; /* Space around section */
+            font-size: 18px; /* Increased font size */
+        }
+
+        h1, h2 {
+            color: #f1c40f; /* Header color */
+            margin-top: 0; /* Remove top margin for headers */
+            font-size: 36px; /* Larger font for main title */
+        }
+
+        p {
+            margin: 10px 0; /* Space between paragraphs */
+            line-height: 1.6; /* Improved readability */
+        }
+
+        .screenshot {
+            width: 100%; /* Full width of the container */
+            max-width: 600px; /* Maximum width for the screenshot */
+            height: auto; /* Auto height to maintain aspect ratio */
+            margin: 20px 0; /* Space above and below the screenshot */
+        }
+
+        a {
+            color: #f1c40f; /* Link color */
+            text-decoration: none; /* No underline for links */
+        }
+
+        .download-button {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #f1c40f; /* Button color */
+            color: #1c1c1c; /* Text color */
+            text-align: center;
+            border: none;
+            border-radius: 5px; /* Rounded corners */
+            width: 150px; /* Set width of button */
+        }
+
+        .download-button:hover {
+            background-color: #e0b10f; /* Darker button on hover */
+        }
+
+        .back-button {
+            margin-top: 20px; /* Space above the back button */
+            padding: 10px 15px;
+            background-color: #f1c40f; /* Button color */
+            color: #1c1c1c; /* Text color */
+            text-align: center;
+            border: none;
+            border-radius: 5px; /* Rounded corners */
+            width: 150px; /* Set width of button */
+            text-decoration: none; /* No underline for links */
+            display: inline-block; /* Allows for padding and margins */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1c1c1c;
+            color: #e0e0e0;
+        }
+
+        body::after {
+            content: '';
+            display: block;
+            height: 60px; /* Adjust this to your footer height */
+        }
+
+        .game-embed {
+            width: 100%; /* Full width of the container */
+            max-width: 600px; /* Maximum width for the embedded game */
+            margin: 20px 0; /* Space above and below the embedded game */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="features.html">Game Features</a></li>
+                <li><a href="download.html">Downloads</a></li>
+                <li><a href="hhmini.html">HH Mini</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hhmini">
+        <h1>HH Mini</h1>
+        <p><strong>HH Mini</strong> is currently in development, designed to bring the thrilling experience of *Harsh Habitats* to a wider audience. This exciting mini-version will be available for various platforms, including:</p>
+        <ul>
+            <li>Flash</li>
+            <li>iPhone 2G - iPhone XR</li>
+            <li>Android</li>
+        </ul>
+
+        <p>With *HH Mini*, players will get a taste of survival and civilization building, all while navigating through the challenges of a prehistoric world. Stay tuned for updates as we finalize the details and features of this captivating mini-game.</p>
+
+        <img src="screenshot3.png" alt="Screenshot of HH Mini" class="screenshot">
+        
+        <p>For those eager to dive into the action, a download link will be available soon! Click below to stay updated.</p>
+        <a href="#" class="download-button">Download (Coming Soon!)</a>
+
+        <h2>Play Village Clicker Free</h2>
+        <p>Experience a quick gameplay session with our embedded game.</p>
+        <object class="game-embed" data="hhv-c.swf" width="600" height="400">
+            <param name="movie" value="hhv-c.swf" />
+            <param name="allowFullScreen" value="true" />
+            <param name="allowScriptAccess" value="always" />
+            <p>Your browser does not support Flash. Please update your browser or download Flash to play.</p>
+        </object>
+
+        <a href="index.htm" class="back-button">Back to Home</a>
+    </section>
+
+    <footer>
+        <p>Copyright © 2024 Xelionix GP & 70 Mile Media</p>
+    </footer>
+</body>
+</html>
+

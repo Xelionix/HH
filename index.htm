@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Habitats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('stoneflip.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the body takes full height */
+        }
+
+        header {
+            background-color: #1c1c1c; /* Dark grey header */
+            padding: 20px;
+            display: flex;
+            align-items: center; /* Align items vertically in the header */
+        }
+
+        .logo {
+            max-width: 200px; /* Resized logo */
+            height: auto;
+            margin-right: 20px; /* Space between logo and nav */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 40px;
+            flex: 1; /* Allows sections to grow and fill space */
+            display: flex; /* Enable flexbox layout */
+            justify-content: space-between; /* Space out items */
+            align-items: flex-start; /* Align items to the top */
+        }
+
+        .media-carousel img {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        /* Increased video size */
+        .showcase-video {
+            width: 720px; /* Set width */
+            height: 480px; /* Set height */
+            margin-top: 20px; /* Space from the header */
+        }
+
+        /* Enlarged image size */
+        .peeps-image {
+            max-width: 600px; /* Increased size */
+            height: auto;
+            margin-left: 20px; /* Space from the left */
+            margin-top: 20px; /* Space from the header */
+            margin-bottom: 20px; /* Space from the footer or next section */
+        }
+
+        .download-button {
+            display: block;
+            margin-top: 20px; /* Space above the button */
+            padding: 10px 15px;
+            background-color: #f1c40f; /* Button color */
+            color: #1c1c1c; /* Text color */
+            text-decoration: none;
+            border-radius: 5px; /* Rounded corners */
+            text-align: center; /* Center text */
+            width: 150px; /* Set width of button */
+        }
+
+        .download-button:hover {
+            background-color: #d4ac12; /* Darker yellow on hover */
+        }
+
+        .game-description {
+            margin-top: 20px; /* Space above description */
+            max-width: 480px; /* Match the video width */
+            font-size: 1.5em; /* Larger text size for description */
+        }
+
+        .screenshots {
+            display: flex; /* Flexbox for screenshot alignment */
+            flex-direction: column; /* Stack screenshots vertically */
+            align-items: flex-start; /* Align screenshots to the left */
+            margin-top: 20px; /* Space above screenshots */
+        }
+
+        .screenshot {
+            max-width: 230px; /* Adjust as needed */
+            height: auto;
+            margin-bottom: 10px; /* Space between screenshots */
+        }
+
+        .updates {
+            margin-top: 40px; /* Space above updates section */
+            background-color: rgba(28, 28, 28, 0.8); /* Slightly transparent background */
+            padding: 20px;
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        blockquote {
+            border: 2px solid #f1c40f; /* Yellow border for quotes */
+            background-color: rgba(44, 44, 44, 0.9); /* Background color for blockquotes */
+            padding: 15px; /* Inner padding */
+            margin: 10px 0; /* Space above and below */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        .blockquote-author {
+            font-size: 0.9em; /* Smaller font size for author */
+            color: #f1c40f; /* Author text color */
+            margin-top: 5px; /* Space above author */
+        }
+
+        .blockquote-date {
+            font-size: 0.8em; /* Smaller font size for date */
+            color: #aaaaaa; /* Date text color */
+            margin-top: 2px; /* Space above date */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1c1c1c;
+            position: relative;
+        }
+
+        body::after {
+            content: '';
+            display: block;
+            height: 60px; /* Adjust this to your footer height */
+        }
+
+        .twitter-logo {
+            width: 20px; /* Set logo size */
+            height: auto;
+            margin-left: 5px; /* Space between Name and logo */
+            vertical-align: middle; /* Align with text */
+        }
+
+        h2 {
+            margin-top: 40px; /* Space above headers */
+            font-size: 1.5em; /* Increase header size */
+        }
+
+        .key-features {
+            margin-top: 20px; /* Space above key features */
+            font-size: 1.1em; /* Larger text size for key features */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="features.html">Game Features</a></li>
+                <li><a href="Download.html">Download</a></li>
+                <li><a href="HHmini.html">HH Mini</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <video class="showcase-video" controls autoplay muted>
+            <source src="showcase vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <img src="peeps.png" alt="Peeps Image" class="peeps-image"> <!-- Image added here -->
+    </section>
+
+    <div class="game-description">
+        <h2>About the Game</h2>
+        <p>Harsh Habitats is a game of survival and civilization building that whisks one off to a planet where your decisions are shaped by both the most hostile forces of nature and the ancient challenges of the time. Set against the tapestry of prehistoric times, you take command of a fledgling tribe, heading them through awful environments, gathering resources, and building the foundation for a successful society. Fight savage beasts, unpredictable weather conditions, and fight for survival as you spearhead your people through the ages from humble beginnings to a powerful civilization. Help your people unlock secrets of the past by using strategic planning, resource management, and a pinch of creativity to set up a legacy in this wild land.</p>
+
+        <h2>Key Features</h2>
+        <div class="key-features">
+            <ul>
+                <li>Build A Civilization: Lay the foundations of your empire, gather resources, and grow your influence.</li>
+                <li>Attack Others: Bring out your fleet and destroy!</li>
+                <li>Rule the World: Dominate the land, expand your reach, and secure your place.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>Screenshots</h2>
+    <div class="screenshots">
+        <img src="screenshot1.png" alt="Screenshot 1" class="screenshot"> <!-- Slot for Screenshot 1 -->
+        <img src="screenshot2.png" alt="Screenshot 2" class="screenshot"> <!-- Slot for Screenshot 2 -->
+    </div>
+
+    <div class="updates">
+        <h2>Latest Updates</h2>
+        <blockquote>
+            <p>Update 1.0: We are excited to announce that the demo version of Harsh Habitats will be available for testing next month!</p>
+            <div class="blockquote-author">- Gammaray <a href="https://x.com/Ongsandwhich" target="_blank"><img src="twit.png" alt="Twitter Logo" class="twitter-logo"></a></div> <!-- Twitter link added here -->
+            <div class="blockquote-date">April 11, 2024</div>
+        </blockquote>
+        <blockquote>
+            <p>Update 1.1: New UI mechanics that enhance the combat experience!</p>
+            <div class="blockquote-author">- 70 Mile Media</div>
+            <div class="blockquote-date">June 2, 2024</div>
+        </blockquote>
+        <blockquote>
+            <p>Update 1.2: Ton of new UI, combat, and pre-movement (no foreshadowing)</p>
+            <div class="blockquote-author">- Gammaray <a href="https://x.com/Ongsandwich" target="_blank"><img src="twit.png" alt="Twitter Logo" class="twitter-logo"></a></div> <!-- Twitter link added here -->
+            <div class="blockquote-date">August 1, 2024</div>
+        </blockquote>
+    </div>
+
+    <footer>
+        <a href="https://xelionix.itch.io/harsh-habitats" class="download-button" target="_blank">Download</a>
+        <p>&copy; 2024 Xelionix GP and 70 Mile Media. All rights reserved.</p>
+    </footer>
+</body>
+</html>

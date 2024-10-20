@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads - Harsh Habitats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('stoneflip.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the body takes full height */
+        }
+
+        header {
+            background-color: #1c1c1c; /* Dark grey header */
+            padding: 20px;
+            display: flex;
+            align-items: center; /* Align items vertically in the header */
+        }
+
+        .logo {
+            max-width: 200px; /* Resized logo */
+            height: auto;
+            margin-right: 20px; /* Space between logo and nav */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 40px;
+            flex: 1; /* Allows sections to grow and fill space */
+            display: flex; /* Enable flexbox layout */
+            flex-direction: column; /* Stack items vertically */
+            justify-content: flex-start; /* Align items to the top */
+            align-items: flex-start; /* Align items to the left */
+            background-color: rgba(28, 28, 28, 0.8); /* Slightly transparent background */
+            border-radius: 5px; /* Rounded corners */
+            margin: 20px; /* Space around section */
+            font-size: 18px; /* Increased font size */
+        }
+
+        h1 {
+            color: #f1c40f; /* Header color */
+            margin-top: 0; /* Remove top margin for headers */
+            font-size: 36px; /* Larger font for main title */
+        }
+
+        iframe {
+            margin: 20px 0; /* Space above and below the iframe */
+            border: none; /* No border for iframe */
+        }
+
+        p {
+            margin: 10px 0; /* Space between paragraphs */
+            line-height: 1.6; /* Improved readability */
+        }
+
+        a {
+            color: #f1c40f; /* Link color */
+            text-decoration: none; /* No underline for links */
+        }
+
+        .back-button {
+            margin-top: 20px; /* Space above the back button */
+            padding: 10px 15px;
+            background-color: #f1c40f; /* Button color */
+            color: #1c1c1c; /* Text color */
+            text-align: center;
+            border: none;
+            border-radius: 5px; /* Rounded corners */
+            width: 150px; /* Set width of button */
+            text-decoration: none; /* No underline for links */
+            display: inline-block; /* Allows for padding and margins */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1c1c1c;
+            color: #e0e0e0;
+        }
+
+        body::after {
+            content: '';
+            display: block;
+            height: 60px; /* Adjust this to your footer height */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="features.html">Game Features</a></li>
+                <li><a href="download.html">Downloads</a></li>
+                <li><a href="hhmini.html">HH Mini</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="downloads">
+        <h1>Downloads</h1>
+        <p>Get ready to play *Harsh Habitats*! The game is currently being updtated on itch.io. You can find the embed below:</p>
+        
+        <iframe frameborder="0" src="https://itch.io/embed/2908375?bg_color=000000&amp;fg_color=ffffff&amp;link_color=f6ff11&amp;border_color=6200f2" width="552" height="167">
+            <a href="https://xelionix.itch.io/harsh-habitats">Harsh Habitats by XelionixGP</a>
+        </iframe>
+
+        <p>*Harsh Habitats* will also be available on Xbox, Steam, and for Mac in the near future, so stay tuned for updates!</p>
+
+        <a href="index.htm" class="back-button">Back to Home</a>
+    </section>
+
+    <footer>
+        <p>Copyright © 2024 Xelionix GP & 70 Mile Media</p>
+    </footer>
+</body>
+</html>
